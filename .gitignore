@@ -1,4 +1,25 @@
-.streamlit/secrets.toml
-
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Environment and local settings
+.env
+.env.*
+!.env.example
+.vscode/
+
+# Test and tooling artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.code-workspace
+
+# macOS
+.DS_Store
