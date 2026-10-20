@@ -23,3 +23,5 @@ htmlcov/
 
 # macOS
 .DS_Store
+
+.streamlit/secrets.toml
