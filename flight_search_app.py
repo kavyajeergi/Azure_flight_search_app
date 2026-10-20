@@ -3,12 +3,11 @@ import requests
 import json
 from datetime import datetime
 import certifi
-
-API_KEY = st.secrets["SERP_API_KEY"]
-
+import os
 from pymongo import MongoClient
 
-MONGO_URI = st.secrets["MONGO_URI"]
+API_KEY = os.getenv("SERP_API_KEY")
+MONGO_URI = os.getenv("MONGO_URI")
 
 client = MongoClient(
     MONGO_URI, tlsCAFile=certifi.where(), serverSelectionTimeoutMS=30000
